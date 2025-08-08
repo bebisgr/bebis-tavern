@@ -1,0 +1,18 @@
+{
+  "name": "bebis-taverna",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/bebisgr/bebis-tavern#readme",
+  "bugs": {
+    "url": "https://github.com/bebisgr/bebis-tavern/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bebisgr/bebis-tavern.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "scripts": {
+    "serve": "npx http-server ."
+  }
+}
