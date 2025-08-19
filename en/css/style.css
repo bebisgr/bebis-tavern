@@ -1,3 +1,8 @@
+:root {
+  --link: #1d4ed8; /* blue-700 */
+  --link-hover: #1e40af; /* blue-800 */
+  --link-visited: #6d28d9; /* violet-700 */
+}
 body {
   font-size: 14px;
   font-family: "Playfair Display", serif !important;
@@ -106,18 +111,19 @@ footer {
 
 /* Global, accessible links (not for buttons/nav tabs) */
 a:not(.btn):not(.nav-link) {
+  color: var(--link);
   text-decoration: underline;
   text-underline-offset: 0.15em;
   text-decoration-thickness: 2px;
+  background-color: transparent; /* βεβαιώσου ότι δεν μένει highlight */
 }
-
-/* Hover/focus affordance */
-a:not(.btn):not(.nav-link):hover,
-a:not(.btn):not(.nav-link):focus {
+a:not(.btn):not(.nav-link):hover {
+  color: var(--link-hover);
   text-decoration-thickness: 3px;
 }
-
-/* Keyboard focus must be visible */
+a:visited {
+  color: var(--link-visited);
+}
 a:focus-visible {
   outline: 2px solid currentColor;
   outline-offset: 2px;
