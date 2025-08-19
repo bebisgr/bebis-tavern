@@ -103,3 +103,23 @@ footer {
   transform: rotate(-180deg);
   background-image: linear-gradient(-180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
 }
+
+/* Global, accessible links (not for buttons/nav tabs) */
+a:not(.btn):not(.nav-link) {
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+  text-decoration-thickness: 2px;
+}
+
+/* Hover/focus affordance */
+a:not(.btn):not(.nav-link):hover,
+a:not(.btn):not(.nav-link):focus {
+  text-decoration-thickness: 3px;
+}
+
+/* Keyboard focus must be visible */
+a:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
